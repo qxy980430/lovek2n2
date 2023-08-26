@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Art</title>
+    <style>
+        body {
+            background-color: lightpink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        #heart {
+            color: deeppink;
+            font-size: 18px;
+            line-height: 1.2;
+            white-space: pre;
+            font-family: monospace;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <pre id="heart"></pre>
+
+    <script>
+        const heartArt = [
+            "      高一诺♥           ♥高一诺     ",
+            "    高一诺高一诺       高一诺高一诺    ",
+            "  高一诺高一诺高一诺♥高一诺高一诺高一诺  ",
+            " 高一诺高一诺高一诺♥♥♥高一诺高一诺高一诺 ",
+            "高一诺♥高一诺♥高一诺♥高一诺♥高一诺♥高一诺",
+            "高一诺♥高一诺♥高一诺♥高一诺♥高一诺♥高一诺",
+            " 高一诺高一诺高一诺♥♥♥高一诺高一诺高一诺 ",
+            "  高一诺♥高一诺♥♥高一诺♥♥高一诺♥高一诺  ",
+            "    高一诺♥高一诺♥♥♥♥♥高一诺♥高一诺    ",
+            "      高一诺♥高一诺♥高一诺♥高一诺      ",
+            "        高一诺♥♥高一诺♥♥高一诺        ",
+            "          高一诺高一诺高一诺          ",
+            "            高一诺♥高一诺            ",
+            "              高♥一♥诺              ",
+			"               高一诺               ",
+			"                 ♥                 "
+        ];
+
+        const heartElement = document.getElementById('heart');
+
+        function displayHeartArt() {
+            heartArt.forEach(line => {
+                heartElement.innerHTML += line + '<br>';
+            });
+        }
+
+        displayHeartArt();
+    </script>
+</body>
+</html>
